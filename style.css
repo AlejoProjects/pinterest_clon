@@ -1,0 +1,195 @@
+/*Navigation bar seciton*/
+#navbar_pinterest {
+    list-style-type: none;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 8fr 1fr 1fr 1fr 1fr;
+    grid-row: 1fr;
+    align-items: center;
+    object-fit: scale-down;
+}
+/*Pinterest logo and original css*/
+.logo {
+    fill: #e60023;
+    padding:10px;
+    width:30%;
+    height:30%;
+}
+
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+
+.nav_text {
+    padding-left: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,Hiragino Kaku Gothic Pro,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: 18px;
+}
+#search {
+    color:grey;
+}
+#inicio {
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    border-radius: 40px;
+    height: 40px;
+    width:60px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-right: 5px;
+
+    
+}
+#buscador {
+    display:flex;
+    background-color: rgb(235, 232, 232);
+    border-radius: 30px;
+    height:50px;
+    align-items: center;
+}
+.lupa {
+    margin-left: 2%;
+    margin-right: 5px;
+    
+}
+.notificacion,.mensaje {
+    fill:rgb(110, 110, 110);
+    margin-left: 20px;
+    padding:10px;
+    width:30%;
+    height:30%;
+}
+li {
+    display: inline;
+}
+/*hover actions*/
+.logo:hover {
+    background-color: rgb(199, 194, 194);
+    border-radius: 80px;
+    border-width: 50px;
+    box-shadow: 30px;
+
+}
+#buscador:hover{
+    background-color: rgb(207, 207, 207);
+}
+.notificacion:hover,.mensaje:hover,.logo:hover{
+   border-radius: 70%;
+   background-color:rgb(218, 216, 216);
+}
+/*PICTURES SECTION*/
+/*Make a giant row to display each column*/
+.section_container{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+}
+/*Make 5 columns for each image container*/
+.sections {
+    display: flex;
+    flex-direction: column;
+    width:20%;
+}
+/*Contains all elements corresponding to the image and its actions*/
+.over_picture {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 25px;
+    padding:0;
+    position: relative;
+    max-width: 90%;
+    object-fit:scale-down;
+    
+ 
+}
+/*refers to the image, its size,behaviour and decoration*/
+.image_width {
+    width:100%;
+    max-height:100%;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    object-fit:scale-down;
+    position: relative;
+}
+
+/*This is a subsection that refers to the elements shown when hovering above an image*/
+.text {
+    display:none;
+    position:absolute;
+    max-width:100%;
+    max-height: 100%;
+    z-index: 1; 
+}
+.over_logo,.over_logo2 {
+    position:absolute;
+    z-index: 1; 
+    fill:white
+}
+.sup{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin-left:7%;
+    object-fit: scale-down;
+    overflow:hidden;
+
+}
+.inf {
+    height:40px;
+    width: 100%;
+    margin-top: 30%;
+
+  
+}
+/*shadow of an image when hovering over it*/
+.over_picture:hover  .image_width {
+    filter: brightness(50%);
+}
+/*elements of the image when hovering over it*/
+.over_picture:hover  .text {
+    display:grid;
+    grid-template-rows: 2fr 1fr;
+    grid-column: 1fr;
+    margin-left: 3%;
+    color:white;
+    font-size: larger;
+}
+.over_text, .over_button {
+    margin-top: 5%;
+    justify-content: center;
+    height:40px;
+    font-size: large;
+    width: 120px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,Hiragino Kaku Gothic Pro,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+   
+}
+
+
+.over_picture:hover  .over_text {
+    padding-top: 10px;
+    color:white;
+    font-size: 20px;
+}
+.over_picture:hover  .over_button {
+    color:white;
+    background-color: red;
+    border-radius: 20px;
+    border-style: none; 
+}
+.over_picture:hover  #over_link {
+    background-color: red;
+    border-radius: 20px;
+    border-style: none; 
+    position:inherit;
+    
+}
+.over_logo, .over_logo2 {
+    width:50px;
+    margin-left:20%;
+}
