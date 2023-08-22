@@ -1,2 +1,5 @@
-# pinterest_clon
-Un clon de la pagina principal de pinteres
+<h1>Pinterest Clon</h1>
+A project to recreate the main page of pinterest using only css and html.
+
+
+
